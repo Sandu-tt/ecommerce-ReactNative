@@ -1,10 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View ,Image} from 'react-native'
 import React from 'react'
 
-const PizzaComponent = () => {
+const PizzaComponent = ({pizza}) => {
+    
+    const data =[pizza];
+   // console.log("data",data);
   return (
     <View>
-      <Text>PizzaComponent</Text>
+      {data.map((item, index)=>(
+        <Pressable>
+           <Image style={{height:200,aspectRatio:5/5,resizeMode:"cover"}} source={{uri:item.image}} />
+        </Pressable>
+      ))}
     </View>
   )
 }

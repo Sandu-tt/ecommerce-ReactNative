@@ -12,8 +12,8 @@ const PizzaScreen = () => {
   return (
     <SafeAreaView>
      <Ionicons  onPress={() =>navigation.goBack()} name="arrow-back-circle" size={24} color="black" />
-     <FlatList data={data} renderItem={({item}) =>(
-<PizzaComponent pizza={item}/>
+     <FlatList showsVerticalScrollIndicator={false} data={data} renderItem={({item}) =>(
+      <PizzaComponent pizza={item}/>
      )}
 
       />

@@ -22,7 +22,7 @@ const MenuComponent = () => {
           <Image
             style={{ width: 80, height: 80, borderRadius: 40 }}
             source={{
-              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-EGo_uL2gQ69jPMfofs6o-T4WFTeFIH1eg&usqp=CAU",
+              uri: "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg",
             }}
           />
           <Text style={{textAlign: "center",fontSize:17,color:"white",marginTop:10,}}>Veg Pizza</Text>

@@ -5,7 +5,7 @@ export default [
       description:
         "Tomato | Grilled Mushroom |Jalapeno |Golden Corn | Beans in a fresh pan crust",
       image: "https://www.dominos.co.in/files/items/PrimeLoadedL.jpg",
-      price: 100,
+      price: 1000,
       veg: true,
     },
     {
@@ -14,7 +14,7 @@ export default [
       description:
         "Creamy Paneer I Onion",
       image: "https://www.dominos.co.in/files/items/PrimeCheesyL.jpg",
-      price: 120,
+      price: 1200,
       veg: true,
     },
     {
@@ -23,7 +23,7 @@ export default [
       description:
         "A hugely popular margherita, with a deliciously tangy single cheese topping",
       image: "https://www.dominos.co.in/files/items/onion_veg.jpg",
-      price: 130,
+      price: 1300,
       veg: true,
     },
     {
@@ -32,7 +32,7 @@ export default [
       description:
         "Golden Corn - Sweet Corn Pizza",
       image: "https://www.dominos.co.in/files/items/golden_corn_veg.jpg",
-      price: 110,
+      price: 1100,
       veg: true,
     },
     {
@@ -41,7 +41,7 @@ export default [
       description:
         "Creamy Paneer I Onion",
       image: "https://www.dominos.co.in/files/items/PrimeCheesyL.jpg",
-      price: 120,
+      price: 1200,
       veg: true,
     },
     {
@@ -50,7 +50,7 @@ export default [
       description:
         "Tomato | Grilled Mushroom |Jalapeno |Golden Corn | Beans in a fresh pan crust",
       image: "https://www.dominos.co.in/files/items/PrimeLoadedL.jpg",
-      price: 100,
+      price: 1000,
       veg: true,
     },
   ];

@@ -9,28 +9,27 @@ import { CartItems } from '../Context';
 
 
 const PizzaScreen = () => {
-  const data=pizza;
-  const navigation=useNavigation();
+  const data = pizza;
+  const navigation = useNavigation();
   const { cart, setCart } = useContext(CartItems);
   const total = cart
     .map((item) => Number(item.price * item.quantity))
     .reduce((prev, curr) => prev + curr, 0);
   console.log(cart, "cart items added");
   console.log(total, "total price");
-
   return (
     <SafeAreaView>
-     <Ionicons  
-     onPress={() =>navigation.goBack()}
-      name="arrow-back-circle" 
-      size={24} 
-      color="black" />
-     <FlatList numColumns={2} 
-     showsVerticalScrollIndicator={false} 
-     data={data} renderItem={({item}) =>(
-      <PizzaComponent pizza={item}/>
-     )}
-
+      <Ionicons
+        onPress={() => navigation.goBack()}
+        name="arrow-back-circle"
+        size={24}
+        color="black"
+      />
+      <FlatList
+        numColumns={2}
+        showsVerticalScrollIndicator={false}
+        data={data}
+        renderItem={({ item }) => <PizzaComponent pizza={item} />}
       />
       {total === 0 ? null : (
         <Pressable
@@ -58,9 +57,9 @@ const PizzaScreen = () => {
         </Pressable>
       )}
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default PizzaScreen
+export default PizzaScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

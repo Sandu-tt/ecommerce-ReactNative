@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View,SafeAreaView  ,Image, ScrollView} from 'react-native'
-import React from 'react'
+import React ,{useContext} from 'react'
 import MenuComponent from '../components/MenuComponent';
 import { useNavigation } from '@react-navigation/native';
+import { CartItems } from '../Context';
 
 const HomeScreen = () => {
- 
+
   const data = [
     {
       id: "0",

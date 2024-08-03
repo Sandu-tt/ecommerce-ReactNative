@@ -11,7 +11,7 @@ const PizzaScreen = () => {
   const navigation=useNavigation();
   return (
     <SafeAreaView>
-     <Ionicons  onPress={() =>navigation.goBack()} name="arrow-back-circle" size={24} color="black" />
+     {/* <Ionicons  onPress={() =>navigation.goBack()} name="arrow-back-circle" size={24} color="black" /> */}
      <FlatList numColumns={2} showsVerticalScrollIndicator={false} data={data} renderItem={({item}) =>(
       <PizzaComponent pizza={item}/>
      )}

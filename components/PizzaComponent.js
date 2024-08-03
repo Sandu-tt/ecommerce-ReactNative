@@ -12,16 +12,12 @@ const PizzaComponent = ({pizza}) => {
     <View>
       {data.map((item, index)=>(
         <Pressable style={{ borderEndColor: "#AFD8F5", borderWidth: 0.1 }}>
-           <Image style={{height:200,aspectRatio: 1 / 1,resizeMode:"cover"}}
-            source={{uri:item.image}} 
-            />
+           <Image style={{height:200,aspectRatio:1/1,resizeMode:"cover"}}
+            source={{uri:item.image}} />
            <View style={{backgroundColor:"#006491",padding:10}}>
-            <Text style={{fontSize:15,fontWeight:"bold",color:"white"}}>
-                {item.name.substr(0,14) + "..."} 
-             </Text>
+            <Text style={{fontSize:17,fontWeight:"bold",color:"white"}}>{item.name.substr(0,15) +"..."}</Text>
 
-            <Text style={{color:"pink",marginTop:4}}>
-                {item.description.substr(0,20) + "..."}
+            <Text style={{color:"pink",marginTop:4}}>{item.description.substr(0,25) + "..."}
 
             </Text>
 
